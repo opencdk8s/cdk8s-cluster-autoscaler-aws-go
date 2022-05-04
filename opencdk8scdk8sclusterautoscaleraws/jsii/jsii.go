@@ -14,7 +14,7 @@ import (
 	cdk8s      "github.com/cdk8s-team/cdk8s-core-go/cdk8s/v2/jsii"
 )
 
-//go:embed opencdk8s-cdk8s-cluster-autoscaler-aws-0.1.3.tgz
+//go:embed opencdk8s-cdk8s-cluster-autoscaler-aws-0.1.4.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
@@ -26,5 +26,5 @@ func Initialize() {
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@opencdk8s/cdk8s-cluster-autoscaler-aws", "0.1.3", tarball)
+	_jsii_.Load("@opencdk8s/cdk8s-cluster-autoscaler-aws", "0.1.4", tarball)
 }
